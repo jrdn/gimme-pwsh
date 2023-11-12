@@ -1,0 +1,10 @@
+version: '3'
+tasks:
+  default:
+    cmds:
+      - cmd: |
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -nologo -command "& { \
+            try { winget install --disable-interactivity --verbose Microsoft.Powershell ; $true } \
+            finally { $true } \
+          }"
+        platforms: [ windows]
