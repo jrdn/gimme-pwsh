@@ -7,4 +7,4 @@ tasks:
             try { winget install --disable-interactivity --verbose Microsoft.Powershell ; $true } \
             finally { $true } \
           }"
-        platforms: [ windows]
+        platforms: [ windows ]
